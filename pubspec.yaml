@@ -1,0 +1,77 @@
+name: finanzas_app
+description: Aplicación móvil de gestión financiera personal moderna y amigable
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Navegación y rutas
+  go_router: ^12.1.3
+  
+  # Base de datos local
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  
+  # Gestión de estado
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # UI y componentes
+  material_design_icons_flutter: ^7.0.7296
+  google_fonts: ^6.1.0
+  animations: ^2.0.8
+  shimmer: ^3.0.0
+  
+  # Gráficos y visualización
+  fl_chart: ^0.65.0
+  syncfusion_flutter_charts: ^23.2.7
+  
+  # Utilidades de fecha
+  intl: ^0.18.1
+  
+  # Almacenamiento seguro
+  flutter_secure_storage: ^9.0.0
+  
+  # Autenticación biométrica
+  local_auth: ^2.1.6
+  
+  # Exportación de archivos
+  csv: ^5.1.1
+  path_provider: ^2.1.1
+  
+  # Compartir archivos
+  share_plus: ^7.2.1
+  
+  # Iconos personalizados
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linting y análisis
+  flutter_lints: ^3.0.1
+  
+  # Generación de código
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.7
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+  
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/CustomIcons.ttf
