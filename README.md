@@ -119,10 +119,28 @@ La aplicación utiliza SQLite con las siguientes tablas principales:
 - Dispositivo Android/iOS o emulador
 
 ### Pasos de Instalación
-1. **Clonar el repositorio**
+
+#### 🚀 Opción 1: Script Automático (Recomendado)
+
+**Linux/macOS:**
+```bash
+# Hacer ejecutable el script
+chmod +x run_app.sh
+# Ejecutar
+./run_app.sh
+```
+
+**Windows:**
+```cmd
+# Ejecutar directamente
+run_app.bat
+```
+
+#### 📖 Opción 2: Manual
+
+1. **Verificar Flutter**
    ```bash
-   git clone https://github.com/tu-usuario/finanzas-app.git
-   cd finanzas-app
+   flutter doctor
    ```
 
 2. **Instalar dependencias**
@@ -130,14 +148,26 @@ La aplicación utiliza SQLite con las siguientes tablas principales:
    flutter pub get
    ```
 
-3. **Generar código (si es necesario)**
+3. **Crear directorios de assets**
    ```bash
-   flutter packages pub run build_runner build
+   mkdir -p assets/{images,icons,animations,fonts}
    ```
 
-4. **Ejecutar la aplicación**
+4. **Verificar dispositivos**
    ```bash
+   flutter devices
+   ```
+
+5. **Ejecutar la aplicación**
+   ```bash
+   # Modo debug (desarrollo)
    flutter run
+   
+   # Modo release (más rápido)
+   flutter run --release
+   
+   # En navegador web
+   flutter run -d chrome
    ```
 
 ### Configuración Inicial
